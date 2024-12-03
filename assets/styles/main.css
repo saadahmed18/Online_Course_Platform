@@ -12,20 +12,22 @@
   padding: 0 15px;
   margin: auto;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+  header .container nav label img {
+    display: none;
+  }
 }
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }
 body {
@@ -36,4 +38,84 @@ ul {
 }
 a {
   text-decoration: none;
+}
+input {
+  appearance: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 25px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+}
+header .container .logo a {
+  font-size: 28px;
+  font-weight: 500;
+  padding-left: 20px;
+  color: var(--black-color);
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .container ul {
+  display: flex;
+  align-items: center;
+}
+header .container ul a {
+  padding: 0 20px;
+  color: var(--black-color);
+}
+header .container ul .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .container ul .search input {
+  width: 200px;
+  display: block;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+}
+header .container ul .search img {
+  position: absolute;
+  right: 15px;
+}
+@media (max-width: 991px) {
+  header .container .logo a {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  header .container ul {
+    display: none;
+  }
+  header .container nav input:checked + ul {
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: -15px;
+    background-color: var(--white-color);
+  }
+  header .container ul a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  }
+  header .container ul li .contact {
+    border: none;
+  }
 }
