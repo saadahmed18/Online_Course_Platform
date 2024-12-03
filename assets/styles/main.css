@@ -89,6 +89,7 @@ header .container ul .search input {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 6px;
+  background-color: transparent;
 }
 header .container ul .search img {
   position: absolute;
@@ -118,4 +119,33 @@ header .container ul .search img {
   header .container ul li .contact {
     border: none;
   }
+}
+.hero {
+  height: calc(100vh - 87px);
+  background-image: url(../images/hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  align-items: end;
+  height: 100%;
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 70px;
+}
+.hero .container .title a {
+  width: 171px;
+  display: inline-block;
+  text-align: center;
+  margin: 15px 15px 0;
+  padding: 15px 0;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
