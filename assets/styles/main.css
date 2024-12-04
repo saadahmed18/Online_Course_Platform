@@ -33,6 +33,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+img {
+  max-width: 100%;
+}
 ul {
   list-style: none;
 }
@@ -95,6 +98,61 @@ header .container ul .search img {
   position: absolute;
   right: 15px;
 }
+.hero {
+  height: calc(100vh - 87px);
+  background-image: url(../images/hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  align-items: end;
+  height: 100%;
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 70px;
+}
+.hero .container .title a {
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  margin: 15px 15px 0;
+  padding: 15px 0;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+.learn-computer-science .container .image {
+  padding: 72px 0;
+}
+.learn-computer-science .container .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.learn-computer-science .container .cards .card-features {
+  width: calc(389px - 48px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: var(--card-color);
+}
+.learn-computer-science .container .cards .card-features h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+.learn-computer-science .container .cards .card-features p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 36px;
+}
 @media (max-width: 991px) {
   header .container .logo a {
     font-size: 20px;
@@ -119,33 +177,11 @@ header .container ul .search img {
   header .container ul li .contact {
     border: none;
   }
-}
-.hero {
-  height: calc(100vh - 87px);
-  background-image: url(../images/hero.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero .container {
-  display: flex;
-  align-items: end;
-  height: 100%;
-  padding-bottom: 50px;
-}
-h1 {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 70px;
-}
-.hero .container .title a {
-  width: 171px;
-  display: inline-block;
-  text-align: center;
-  margin: 15px 15px 0;
-  padding: 15px 0;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--black-color);
-  background-color: var(--white-color);
+  .title {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
