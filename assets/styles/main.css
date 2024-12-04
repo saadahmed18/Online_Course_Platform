@@ -168,6 +168,46 @@ h1 {
 .our-Learners .container .images img {
   width: 250px;
 }
+.footer-navbar .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 75px;
+}
+.footer-navbar .container .links {
+  display: flex;
+  gap: 30px;
+}
+.footer-navbar .container .links .links-navbar h3 {
+  padding-bottom: 30px;
+}
+.footer-navbar .container a {
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--black-color);
+}
+.subscripe p {
+  padding-top: 25px;
+}
+.subscripe .input-and-link {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.subscripe .input-and-link input {
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  background-color: var(--card-color);
+}
+.subscripe .input-and-link a {
+  padding: 20px;
+  border-radius: 50px;
+  color: var(--white-color);
+  background-color: #2d8dd5;
+}
 @media (max-width: 991px) {
   header .container .logo a {
     font-size: 20px;
@@ -198,5 +238,9 @@ h1 {
   h1 {
     font-size: 30px;
     line-height: 50px;
+  }
+  .footer-navbar .container {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
