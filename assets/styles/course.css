@@ -91,14 +91,14 @@ section {
   font-size: 40px;
   font-weight: 700;
 }
-.courses-list {
+.explore-courses .courses-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 60px;
 }
-.courses-list .course {
+.explore-courses .courses-list .course {
   max-width: 360px;
   border: 1px solid rgba(0, 0, 0, 0.204);
   border-radius: 6px;
@@ -107,14 +107,14 @@ section {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
-.explore-courses .info {
+.info {
   padding: 12px;
 }
-.explore-courses .info h3 {
+.info h3 {
   font-size: 16px;
   font-weight: 300;
 }
-.explore-courses .info p {
+.info p {
   margin-top: 4px;
   font-size: 20px;
   font-weight: 500;
@@ -125,6 +125,38 @@ section {
   margin-top: 40px;
 }
 .course-artificial-intelligence .course {
+  border: 1px solid rgba(0, 0, 0, 0.204);
+  border-radius: 6px;
+}
+.course-details .courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  padding-top: 60px;
+}
+@media (max-width: 440px) {
+  .course-details .courses-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.course-details .courses-list .course {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.204);
+  border-radius: 6px;
+}
+.course-details img {
+  padding: 16px;
+}
+.course-details .info p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+}
+.course-c-sharp {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
   border: 1px solid rgba(0, 0, 0, 0.204);
   border-radius: 6px;
 }
