@@ -42,3 +42,89 @@ header .logo div {
   background-color: rgba(0, 0, 0, 0.194);
   border-radius: 50%;
 }
+section {
+  padding: 75px 0;
+}
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.personal-information .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+@media (max-width: 991px) {
+  .personal-information .inputs {
+    justify-content: center;
+  }
+}
+.personal-information .inputs .coulmn {
+  width: 500px;
+}
+input,
+label {
+  display: block;
+}
+label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.personal-information .inputs .coulmn input {
+  width: 80%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.181);
+}
+input[type="text"],
+input[type="email"] {
+  margin: 0 0 30px 0;
+}
+input::placeholder {
+  font-size: 14px;
+}
+.title-gender {
+  padding-top: 40px;
+}
+.gender {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .gender {
+    justify-content: center;
+  }
+  .title-gender {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+  }
+}
+.gender label {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.059);
+}
+input[type="radio"] {
+  appearance: none;
+}
+
+.btn-next {
+  display: block;
+  width: 240px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--black);
+}
