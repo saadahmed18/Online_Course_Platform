@@ -39,6 +39,9 @@ header .logo div {
   background-color: rgba(0, 0, 0, 0.194);
   border-radius: 50%;
 }
+section {
+  padding: 75px 0;
+}
 .hero {
   height: 349px;
   background: url(../images/course-hero.webp) center / cover;
@@ -80,4 +83,48 @@ header .logo div {
   text-decoration: none;
   background-color: var(--black);
   color: var(--white);
+}
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.courses-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 60px;
+}
+.courses-list .course {
+  max-width: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.204);
+  border-radius: 6px;
+}
+.explore-courses .course img {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.explore-courses .info {
+  padding: 12px;
+}
+.explore-courses .info h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.explore-courses .info p {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-artificial-intelligence {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.course-artificial-intelligence .course {
+  border: 1px solid rgba(0, 0, 0, 0.204);
+  border-radius: 6px;
 }
