@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gainsboro: #dbdbdb;
+  --white: white;
+  --black: black;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+header .logo div {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.194);
+  border-radius: 50%;
+}
+.hero {
+  height: 349px;
+  background: url(../images/course-hero.webp) center / cover;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hero .hero-text {
+  text-align: center;
+}
+.hero .hero-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.hero .hero-text p {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.hero .hero-text input {
+  display: block;
+  width: 336px;
+  margin: auto;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.hero .hero-text a {
+  width: 240px;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: var(--black);
+  color: var(--white);
+}
