@@ -160,3 +160,26 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.204);
   border-radius: 6px;
 }
+.course-benefits .benefits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 60px;
+}
+.benefits-list .benefits {
+  width: 340px;
+  text-align: center;
+}
+.benefits .image {
+  margin-bottom: 15px;
+}
+.benefits h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.benefits p {
+  color: rgba(0, 0, 0, 0.329);
+}
