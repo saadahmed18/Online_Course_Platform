@@ -37,16 +37,24 @@
         </div>
         <div class="inputs">
           <div class="coulmn">
-            <label for="full-name">Full Name</label>
-            <input class="full-name" type="text" id="full-name" placeholder="Enter your full name" autofocus />
-            <label for="phone-number">Phone Number</label>
-            <input type="text" id="phone-number" placeholder="Enter your phone number" />
+            <div class="full-name">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="Enter your full name" autofocus />
+            </div>
+            <div class="phone-number">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" id="phone-number" placeholder="Enter your phone number" />
+            </div>
           </div>
           <div class="coulmn">
-            <label for="email">Email</label>
-            <input type="Email" id="email" placeholder="Enter your email" autofocus />
-            <label for="date-of-birth">Date of Birth</label>
-            <input type="text" id="date-of-birth" placeholder="Select your date of birth" />
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="date-fo-birth">
+              <label for="date-of-birth">Date of Birth</label>
+              <input type="text" id="date-of-birth" placeholder="Select your date of birth" />
+            </div>
           </div>
         </div>
         <label class="title-gender">Gender</label>
@@ -98,16 +106,55 @@
         </div>
         <div class="inputs">
           <div class="coulmn">
-            <label for="number">Credit Card Number</label>
-            <input class="number" type="text" id="number" placeholder="Enter your credit card number" />
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" placeholder="Enter CVV" />
+            <div class="credit-number">
+              <label for="number">Credit Card Number</label>
+              <input class="number" type="text" id="number" placeholder="Enter your credit card number" />
+            </div>
+            <div class="cvv">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="Enter CVV" />
+            </div>
           </div>
           <div class="coulmn">
-            <label for="expiration-date">Expiration Date</label>
-            <input type="Email" id="expiration-date" placeholder="Enter expiration date" />
-            <label for="billing-address">Billing Address</label>
-            <input type="text" id="billing-address" placeholder="Enter your address" />
+            <div class="expiration-date">
+              <label for="expiration-date">Expiration Date</label>
+              <input type="text" id="expiration-date" placeholder="Enter expiration date" />
+            </div>
+            <div class="billing-address">
+              <label for="billing-address">Billing Address</label>
+              <input type="text" id="billing-address" placeholder="Enter your address" />
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <a class="btn-back" href="#">Back</a>
+          <a class="btn-next" href="#">Next</a>
+        </div>
+      </div>
+    </section>
+    <section class="account-setup">
+      <div class="container">
+        <div class="main-title">
+          <h2>Account Setup</h2>
+        </div>
+        <div class="signup">
+          <div class="form-left">
+              <label for="user-name">Username</label>
+              <input type="text" id="user-name" placeholder="Enter your username" required />
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+              <label for="security-answer">Security Answer</label>
+              <input type="text" id="security-answer" placeholder="Enter your security answer" required />
+          </div>
+          <div class="form-right">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required />
+            <label class="title-check-security-question">Security Question</label>
+            <div class="check-security-question">
+              <label>Question 1<input type="radio" /></label>
+              <label>Question 2<input type="radio" /></label>
+              <label>Question 3<input type="radio" /></label>
+            </div>
           </div>
         </div>
         <div class="btns">
